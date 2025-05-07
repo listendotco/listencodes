@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen.co(des)</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 40%;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            background-color: #ffffff;
+        }
+        @media (max-width: 900px) {
+            body {
+                max-width: 90%;
+                padding: 1rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                max-width: 100%;
+                width: 100%;
+                padding: 0.5rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #111;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 3rem;
+            max-width: 800px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+            min-width: 0;
+        }
+
+        .grid-item {
+            aspect-ratio: 1 / 1;
+            border: 2px solid #111;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #111;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: none;
+            border-radius: 0;
+            text-align: center;
+            transition: background 0.2s;
+            min-width: 0;
+        }
+        .grid-item:nth-child(1) { background: #eab24b; }
+        .grid-item:nth-child(2) { background: #b7c3bb; }
+        .grid-item:nth-child(3) { background: #d07c6c; }
+        .grid-item:nth-child(4) { background: #a892b2; }
+        .grid-item:nth-child(5) { background: #ecd49a; }
+        .grid-item:nth-child(6),
+        .grid-item:nth-child(7),
+        .grid-item:nth-child(8),
+        .grid-item:nth-child(9) {
+            display: none;
+        }
+
+        .grid-item-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .grid-title {
+            font-family: 'Menlo', 'Consolas', 'Liberation Mono', monospace;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 0.15em;
+            color: #111;
+            word-break: break-word;
+        }
+        .grid-subtitle {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-size: 0.9em;
+            color: #222;
+            opacity: 0.7;
+            font-weight: 400;
+        }
+
+        /* Responsive grid overrides at the end for specificity */
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Listen.co(des)</h1>
+    <p>Listen.codes is a project led by <a href="https://linkedin.com/in/johnnieryu" target="_blank" rel="noopener noreferrer">Johnnie Yu</a>, tech-ifying the combined knowledge of <a href="https://listen.co" target="_blank" rel="noopener noreferrer">Listen</a> into a series of tech products, sometimes useful, mostly experimental.</p>
+    
+    <div class="grid">
+        <a class="grid-item" href="about:blank" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+            <div class="grid-item-content">
+                <span class="grid-title">Cohorts</span>
+                <span class="grid-subtitle">(Coming Soon)</span>
+            </div>
+        </a>
+        <a class="grid-item" href="https://chat.listen.codes" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+            <div class="grid-item-content">
+                <span class="grid-title">Chat</span>
+                <span class="grid-subtitle">(Internal)</span>
+            </div>
+        </a>
+        <a class="grid-item" href="https://wiki.listen.codes" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+            <div class="grid-item-content">
+                <span class="grid-title">Wiki</span>
+                <span class="grid-subtitle">(Internal)</span>
+            </div>
+        </a>
+        <a class="grid-item" href="https://base.listen.codes" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+            <div class="grid-item-content">
+                <span class="grid-title">Base</span>
+                <span class="grid-subtitle">(Internal)</span>
+            </div>
+        </a>
+        <!-- Fifth box hidden -->
+        <div class="grid-item" style="display:none;"></div>
+    </div>
+</body>
+</html> 
